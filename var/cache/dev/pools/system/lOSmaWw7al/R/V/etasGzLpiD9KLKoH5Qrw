@@ -1,0 +1,44 @@
+<?php //App%255CEntity%255CPromotionCategorie
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Table'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Table')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Index'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Index')),
+        clone $p['Doctrine\\ORM\\Mapping\\Index'],
+        clone ($p['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+        clone $p['Doctrine\\ORM\\Mapping\\Entity'],
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'promotion_categorie',
+                'FK_PROMOTIO_APP16_CATEGORI',
+                'FK_PROMOTIO_APP17_PROMOTIO',
+            ],
+            'indexes' => [
+                [
+                    $o[1],
+                    $o[2],
+                ],
+            ],
+            'columns' => [
+                1 => [
+                    'categorie_id',
+                ],
+                [
+                    'promotion_id',
+                ],
+            ],
+            'repositoryClass' => [
+                4 => 'App\\Repository\\PromotionCategorieRepository',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[3],
+        $o[4],
+    ],
+    []
+); }];

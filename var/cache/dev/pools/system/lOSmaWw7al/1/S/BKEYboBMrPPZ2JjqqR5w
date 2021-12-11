@@ -1,0 +1,38 @@
+<?php //App%255CEntity%255CClient
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Table'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Table')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Index'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Index')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+        clone $p['Doctrine\\ORM\\Mapping\\Entity'],
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'client',
+                'FK_CLIENT_APP08_ADRESSE',
+            ],
+            'indexes' => [
+                [
+                    $o[1],
+                ],
+            ],
+            'columns' => [
+                1 => [
+                    'adresse_id',
+                ],
+            ],
+            'repositoryClass' => [
+                3 => 'App\\Repository\\ClientRepository',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[2],
+        $o[3],
+    ],
+    []
+); }];
